@@ -1,1 +1,5 @@
 //your code here
+
+// state:"failed"
+// body:"() => { cy.visit(baseUrl + "/main.html"); cy.contains('3 random audios'); cy.get('audio').should($audios => { expect($audios).to.have.length(3); expect($audios).to.have.attr('controls'); const srcs = $audios.map((i, el) => { return Cypress.$(el).attr('src'); }); expect(srcs.get()).to.deep.eq(['http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3', 'http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg', 'http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3']); }); }"
+// displayError:"AssertionError: Timed out retrying after 4000ms: expected [] to deeply equal [ Array(3) ] at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/tests/test.spec.js:124:34)"
